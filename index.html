@@ -1,0 +1,56 @@
+<html>
+<head>
+
+
+    <meta charset="UTF-8" http-equiv="refresh" name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Case Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="java.js"></script>
+
+</head>
+
+<body >
+    <div class="container" style="display:flex; padding-left:20px;align-self: top;">
+        <div id="searchtopbar"> 
+            <div>
+                <h1> Casefile Search </h1>
+            </div>
+            <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: small;margin-top:-50px">Keeping up the good work.</h1>
+            <table style="width: 90%; table-layout: fixed;">
+                <tr>
+                    <th>Inbox</th>
+                    <th>Newsletter</th>
+                    <th>Archives</th>
+                    <th>Forms</th>
+                    <th>Leave Applications Portal</th>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <div class="box" id="filesearch">
+            <p>
+                <br><br>
+                Casefile access is monitored and only available to an approved list of users. Attempts at access without authorization will fail and may result in disciplinary action. If unsure of your clearance, contact your superior immediately.
+                <form>
+                    <input id="casefileno";
+                        type="text" 
+                        required 
+                        minlength="5"
+                        maxlength="5"
+                        pattern="[0-9]*"
+                        title="Please enter a valid case reference."
+                        >
+                    <button style="width:100%;" type="submit" onclick="filenoCheck()">Submit</button>
+                    <p id="displayArea"></p>
+                </form>
+            </p>            
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
