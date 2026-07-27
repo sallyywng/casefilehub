@@ -35,19 +35,3 @@ function closetab() {
     let open = document.getElementById("floatingbox");
     open.remove();
 }
-
-function opentl() {
-    window.location.href = 'timeline.html';
-}
-
-function openmsgs() {
-    window.location.href = 'messages.html';
-}
-
-function openprofile() {
-    window.location.href = 'profile.html';
-}
-
-function opennews() {
-     window.open('index.html', '_blank');
-}
